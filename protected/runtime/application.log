@@ -1,0 +1,1732 @@
+2014/07/14 08:50:42 [error] [php] Undefined variable: kalteng (C:\xampp\htdocs\triomotor\protected\views\site\index.php:896)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(869): SiteController->renderFile()
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(782): SiteController->renderPartial()
+#2 C:\xampp\htdocs\triomotor\protected\controllers\SiteController.php(32): SiteController->render()
+#3 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(286): SiteController->runAction()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#7 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#8 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\triomotor\index.php(13): CWebApplication->run()
+REQUEST_URI=/triomotor/
+in C:\xampp\htdocs\triomotor\protected\views\site\index.php (896)
+in C:\xampp\htdocs\triomotor\protected\controllers\SiteController.php (32)
+in C:\xampp\htdocs\triomotor\index.php (13)
+2014/07/14 08:53:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "provinsi/index2".' in C:\xampp\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('provinsi/index2')
+#1 C:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\triomotor\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/triomotor/?r=provinsi/index2&prov=kalsel
+HTTP_REFERER=http://localhost/triomotor/
+---
+2014/07/14 10:11:41 [error] [exception.CException] exception 'CException' with message 'Provinsi and its behaviors do not have a method or closure named "finBydAttributes".' in C:\xampp\htdocs\yii\framework\base\CComponent.php:265
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(225): CComponent->__call('finBydAttribute...', Array)
+#1 C:\xampp\htdocs\triomotor\protected\controllers\ProvinsiController.php(170): CActiveRecord->__call('finBydAttribute...', Array)
+#2 C:\xampp\htdocs\triomotor\protected\controllers\ProvinsiController.php(170): Provinsi->finBydAttributes('Kabupaten Kotaw...')
+#3 [internal function]: ProvinsiController->actionIndex('kalteng')
+#4 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(ProvinsiController), Array)
+#5 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ProvinsiController), Object(ReflectionMethod), Array)
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#8 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#10 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#11 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#12 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#13 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('')
+#15 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('provinsi')
+#16 C:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#17 C:\xampp\htdocs\triomotor\index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/triomotor/?r=provinsi&prov=kalteng
+---
+2014/07/14 10:12:04 [error] [php] Invalid argument supplied for foreach() (C:\xampp\htdocs\yii\framework\db\schema\CDbCommandBuilder.php:567)
+Stack trace:
+#0 unknown(0): ProvinsiController->actionIndex()
+#1 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#2 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#4 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): ProvinsiController->runAction()
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#7 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): ProvinsiController->filterAccessControl()
+#8 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(265): ProvinsiController->runActionWithFilters()
+#11 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): ProvinsiController->run()
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#13 C:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#14 C:\xampp\htdocs\triomotor\index.php(13): CWebApplication->run()
+REQUEST_URI=/triomotor/?r=provinsi&prov=kalteng
+in C:\xampp\htdocs\triomotor\protected\controllers\ProvinsiController.php (170)
+in C:\xampp\htdocs\triomotor\index.php (13)
+2014/07/14 10:13:04 [error] [php] Trying to get property of non-object (C:\xampp\htdocs\triomotor\protected\views\provinsi\kalteng.php:11222)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(869): ProvinsiController->renderFile()
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(782): ProvinsiController->renderPartial()
+#2 C:\xampp\htdocs\triomotor\protected\controllers\ProvinsiController.php(174): ProvinsiController->render()
+#3 unknown(0): ProvinsiController->actionIndex()
+#4 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#5 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): ProvinsiController->runAction()
+#8 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#10 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): ProvinsiController->filterAccessControl()
+#11 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#12 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#13 C:\xampp\htdocs\yii\framework\web\CController.php(265): ProvinsiController->runActionWithFilters()
+#14 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): ProvinsiController->run()
+#15 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#16 C:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#17 C:\xampp\htdocs\triomotor\index.php(13): CWebApplication->run()
+REQUEST_URI=/triomotor/?r=provinsi&prov=kalteng
+in C:\xampp\htdocs\triomotor\protected\views\provinsi\kalteng.php (11222)
+in C:\xampp\htdocs\triomotor\protected\controllers\ProvinsiController.php (174)
+in C:\xampp\htdocs\triomotor\index.php (13)
+2014/07/14 10:15:20 [error] [php] Trying to get property of non-object (C:\xampp\htdocs\triomotor\protected\views\provinsi\kalteng.php:11225)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(869): ProvinsiController->renderFile()
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(782): ProvinsiController->renderPartial()
+#2 C:\xampp\htdocs\triomotor\protected\controllers\ProvinsiController.php(174): ProvinsiController->render()
+#3 unknown(0): ProvinsiController->actionIndex()
+#4 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#5 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): ProvinsiController->runAction()
+#8 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#10 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): ProvinsiController->filterAccessControl()
+#11 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#12 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#13 C:\xampp\htdocs\yii\framework\web\CController.php(265): ProvinsiController->runActionWithFilters()
+#14 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): ProvinsiController->run()
+#15 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#16 C:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#17 C:\xampp\htdocs\triomotor\index.php(13): CWebApplication->run()
+REQUEST_URI=/triomotor/?r=provinsi&prov=kalteng
+in C:\xampp\htdocs\triomotor\protected\views\provinsi\kalteng.php (11225)
+in C:\xampp\htdocs\triomotor\protected\controllers\ProvinsiController.php (174)
+in C:\xampp\htdocs\triomotor\index.php (13)
+2014/07/14 10:19:40 [error] [php] Invalid argument supplied for foreach() (C:\xampp\htdocs\triomotor\protected\views\provinsi\kalteng.php:11234)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(869): ProvinsiController->renderFile()
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(782): ProvinsiController->renderPartial()
+#2 C:\xampp\htdocs\triomotor\protected\controllers\ProvinsiController.php(174): ProvinsiController->render()
+#3 unknown(0): ProvinsiController->actionIndex()
+#4 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#5 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): ProvinsiController->runAction()
+#8 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#10 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): ProvinsiController->filterAccessControl()
+#11 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#12 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#13 C:\xampp\htdocs\yii\framework\web\CController.php(265): ProvinsiController->runActionWithFilters()
+#14 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): ProvinsiController->run()
+#15 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#16 C:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#17 C:\xampp\htdocs\triomotor\index.php(13): CWebApplication->run()
+REQUEST_URI=/triomotor/?r=provinsi&prov=kalteng
+in C:\xampp\htdocs\triomotor\protected\views\provinsi\kalteng.php (11234)
+in C:\xampp\htdocs\triomotor\protected\controllers\ProvinsiController.php (174)
+in C:\xampp\htdocs\triomotor\index.php (13)
+2014/07/14 10:20:27 [error] [php] Invalid argument supplied for foreach() (C:\xampp\htdocs\triomotor\protected\views\provinsi\kalteng.php:11234)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(869): ProvinsiController->renderFile()
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(782): ProvinsiController->renderPartial()
+#2 C:\xampp\htdocs\triomotor\protected\controllers\ProvinsiController.php(174): ProvinsiController->render()
+#3 unknown(0): ProvinsiController->actionIndex()
+#4 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#5 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): ProvinsiController->runAction()
+#8 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#10 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): ProvinsiController->filterAccessControl()
+#11 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#12 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#13 C:\xampp\htdocs\yii\framework\web\CController.php(265): ProvinsiController->runActionWithFilters()
+#14 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): ProvinsiController->run()
+#15 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#16 C:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#17 C:\xampp\htdocs\triomotor\index.php(13): CWebApplication->run()
+REQUEST_URI=/triomotor/?r=provinsi&prov=kalteng
+in C:\xampp\htdocs\triomotor\protected\views\provinsi\kalteng.php (11234)
+in C:\xampp\htdocs\triomotor\protected\controllers\ProvinsiController.php (174)
+in C:\xampp\htdocs\triomotor\index.php (13)
+2014/07/14 10:43:39 [error] [php] Invalid argument supplied for foreach() (C:\xampp\htdocs\triomotor\protected\views\provinsi\kalteng.php:11234)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(869): ProvinsiController->renderFile()
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(782): ProvinsiController->renderPartial()
+#2 C:\xampp\htdocs\triomotor\protected\controllers\ProvinsiController.php(174): ProvinsiController->render()
+#3 unknown(0): ProvinsiController->actionIndex()
+#4 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#5 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): ProvinsiController->runAction()
+#8 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#10 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): ProvinsiController->filterAccessControl()
+#11 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#12 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#13 C:\xampp\htdocs\yii\framework\web\CController.php(265): ProvinsiController->runActionWithFilters()
+#14 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): ProvinsiController->run()
+#15 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#16 C:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#17 C:\xampp\htdocs\triomotor\index.php(13): CWebApplication->run()
+REQUEST_URI=/triomotor/?r=provinsi&prov=kalteng
+in C:\xampp\htdocs\triomotor\protected\views\provinsi\kalteng.php (11234)
+in C:\xampp\htdocs\triomotor\protected\controllers\ProvinsiController.php (174)
+in C:\xampp\htdocs\triomotor\index.php (13)
+2014/07/14 10:44:34 [error] [php] Trying to get property of non-object (C:\xampp\htdocs\triomotor\protected\views\provinsi\kalteng.php:11235)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(869): ProvinsiController->renderFile()
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(782): ProvinsiController->renderPartial()
+#2 C:\xampp\htdocs\triomotor\protected\controllers\ProvinsiController.php(174): ProvinsiController->render()
+#3 unknown(0): ProvinsiController->actionIndex()
+#4 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#5 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): ProvinsiController->runAction()
+#8 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#10 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): ProvinsiController->filterAccessControl()
+#11 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#12 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#13 C:\xampp\htdocs\yii\framework\web\CController.php(265): ProvinsiController->runActionWithFilters()
+#14 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): ProvinsiController->run()
+#15 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#16 C:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#17 C:\xampp\htdocs\triomotor\index.php(13): CWebApplication->run()
+REQUEST_URI=/triomotor/?r=provinsi&prov=kalteng
+in C:\xampp\htdocs\triomotor\protected\views\provinsi\kalteng.php (11235)
+in C:\xampp\htdocs\triomotor\protected\controllers\ProvinsiController.php (174)
+in C:\xampp\htdocs\triomotor\index.php (13)
+2014/07/14 10:45:09 [error] [php] Trying to get property of non-object (C:\xampp\htdocs\triomotor\protected\views\provinsi\kalteng.php:11235)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(869): ProvinsiController->renderFile()
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(782): ProvinsiController->renderPartial()
+#2 C:\xampp\htdocs\triomotor\protected\controllers\ProvinsiController.php(174): ProvinsiController->render()
+#3 unknown(0): ProvinsiController->actionIndex()
+#4 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#5 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): ProvinsiController->runAction()
+#8 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#10 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): ProvinsiController->filterAccessControl()
+#11 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#12 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#13 C:\xampp\htdocs\yii\framework\web\CController.php(265): ProvinsiController->runActionWithFilters()
+#14 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): ProvinsiController->run()
+#15 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#16 C:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#17 C:\xampp\htdocs\triomotor\index.php(13): CWebApplication->run()
+REQUEST_URI=/triomotor/?r=provinsi&prov=kalteng
+in C:\xampp\htdocs\triomotor\protected\views\provinsi\kalteng.php (11235)
+in C:\xampp\htdocs\triomotor\protected\controllers\ProvinsiController.php (174)
+in C:\xampp\htdocs\triomotor\index.php (13)
+2014/07/14 11:01:27 [error] [php] Trying to get property of non-object (C:\xampp\htdocs\triomotor\protected\views\provinsi\kalteng.php:11222)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(869): ProvinsiController->renderFile()
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(782): ProvinsiController->renderPartial()
+#2 C:\xampp\htdocs\triomotor\protected\controllers\ProvinsiController.php(174): ProvinsiController->render()
+#3 unknown(0): ProvinsiController->actionIndex()
+#4 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#5 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): ProvinsiController->runAction()
+#8 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#10 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): ProvinsiController->filterAccessControl()
+#11 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#12 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#13 C:\xampp\htdocs\yii\framework\web\CController.php(265): ProvinsiController->runActionWithFilters()
+#14 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): ProvinsiController->run()
+#15 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#16 C:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#17 C:\xampp\htdocs\triomotor\index.php(13): CWebApplication->run()
+REQUEST_URI=/triomotor/?r=provinsi&prov=kalteng
+in C:\xampp\htdocs\triomotor\protected\views\provinsi\kalteng.php (11222)
+in C:\xampp\htdocs\triomotor\protected\controllers\ProvinsiController.php (174)
+in C:\xampp\htdocs\triomotor\index.php (13)
+2014/07/14 11:12:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "kabupatenadmin".' in C:\xampp\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('kabupatenadmin')
+#1 C:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\triomotor\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/triomotor/?r=kabupatenadmin
+---
+2014/07/15 04:50:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "kabupatenKota".' in C:\xampp\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('kabupatenKota')
+#1 C:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\triomotor\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/triomotor/?r=kabupatenKota&prov=banjarmasin
+HTTP_REFERER=http://localhost/triomotor/?r=provinsi&prov=kalsel
+---
+2014/07/16 02:39:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "kabupaten=kotawaringinBarat".' in C:\xampp\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('kabupaten=kotaw...')
+#1 C:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\triomotor\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/triomotor/?r=kabupaten=kotawaringinBarat
+HTTP_REFERER=http://localhost/triomotor/?r=provinsi&prov=kalteng
+---
+2014/07/17 04:32:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "kabupaten=kotawaringinBarat".' in C:\xampp\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('kabupaten=kotaw...')
+#1 C:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\triomotor\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/triomotor/?r=kabupaten=kotawaringinBarat
+HTTP_REFERER=http://localhost/triomotor/?r=provinsi&prov=kalteng
+---
+2014/07/17 04:37:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "kabupaten=kotawaringinBarat".' in C:\xampp\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('kabupaten=kotaw...')
+#1 C:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\triomotor\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/triomotor/?r=kabupaten=kotawaringinBarat
+HTTP_REFERER=http://localhost/triomotor/?r=provinsi&prov=kalteng
+---
+2014/07/17 04:40:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "kabupaten=kotawaringinBarat".' in C:\xampp\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('kabupaten=kotaw...')
+#1 C:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\triomotor\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/triomotor/?r=kabupaten=kotawaringinBarat
+HTTP_REFERER=http://localhost/triomotor/?r=provinsi&prov=kalteng
+---
+2014/07/17 08:18:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "kabupaten=kotawaringinBarat".' in C:\xampp\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('kabupaten=kotaw...')
+#1 C:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\triomotor\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/triomotor/?r=kabupaten=kotawaringinBarat
+HTTP_REFERER=http://localhost/triomotor/?r=provinsi&prov=kalteng
+---
+2014/07/17 10:23:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "kabupaten=kotawaringinBarat".' in C:\xampp\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('kabupaten=kotaw...')
+#1 C:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\triomotor\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/triomotor/?r=kabupaten=kotawaringinBarat
+HTTP_REFERER=http://localhost/triomotor/?r=provinsi&prov=kalteng
+---
+2014/07/17 10:27:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "kabupaten=kotawaringinBarat".' in C:\xampp\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('kabupaten=kotaw...')
+#1 C:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\triomotor\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/triomotor/?r=kabupaten=kotawaringinBarat
+HTTP_REFERER=http://localhost/triomotor/?r=provinsi&prov=kalteng
+---
+2014/07/18 03:32:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "kabupaten=kotawaringinBarat".' in C:\xampp\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('kabupaten=kotaw...')
+#1 C:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\triomotor\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/triomotor/?r=kabupaten=kotawaringinBarat
+HTTP_REFERER=http://localhost/triomotor/?r=provinsi&prov=kalteng
+---
+2014/07/18 04:00:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "kabupaten=kotawaringinBarat".' in C:\xampp\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('kabupaten=kotaw...')
+#1 C:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\triomotor\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/triomotor/?r=kabupaten=kotawaringinBarat
+HTTP_REFERER=http://localhost/triomotor/?r=provinsi&prov=kalteng
+---
+2014/07/18 09:17:52 [error] [php] Use of undefined constant kode - assumed 'kode' (C:\xampp\htdocs\triomotor\protected\views\provinsi\kalteng.php:11022)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(869): ProvinsiController->renderFile()
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(782): ProvinsiController->renderPartial()
+#2 C:\xampp\htdocs\triomotor\protected\controllers\ProvinsiController.php(201): ProvinsiController->render()
+#3 unknown(0): ProvinsiController->actionIndex()
+#4 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#5 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): ProvinsiController->runAction()
+#8 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#10 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): ProvinsiController->filterAccessControl()
+#11 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#12 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#13 C:\xampp\htdocs\yii\framework\web\CController.php(265): ProvinsiController->runActionWithFilters()
+#14 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): ProvinsiController->run()
+#15 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#16 C:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#17 C:\xampp\htdocs\triomotor\index.php(13): CWebApplication->run()
+REQUEST_URI=/triomotor/?r=provinsi&prov=kalteng
+in C:\xampp\htdocs\triomotor\protected\views\provinsi\kalteng.php (11022)
+in C:\xampp\htdocs\triomotor\protected\controllers\ProvinsiController.php (201)
+in C:\xampp\htdocs\triomotor\index.php (13)
+2014/07/18 09:18:32 [error] [php] Use of undefined constant kode - assumed 'kode' (C:\xampp\htdocs\triomotor\protected\views\provinsi\kalteng.php:11022)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(869): ProvinsiController->renderFile()
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(782): ProvinsiController->renderPartial()
+#2 C:\xampp\htdocs\triomotor\protected\controllers\ProvinsiController.php(201): ProvinsiController->render()
+#3 unknown(0): ProvinsiController->actionIndex()
+#4 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#5 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): ProvinsiController->runAction()
+#8 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#10 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): ProvinsiController->filterAccessControl()
+#11 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#12 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#13 C:\xampp\htdocs\yii\framework\web\CController.php(265): ProvinsiController->runActionWithFilters()
+#14 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): ProvinsiController->run()
+#15 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#16 C:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#17 C:\xampp\htdocs\triomotor\index.php(13): CWebApplication->run()
+REQUEST_URI=/triomotor/?r=provinsi&prov=kalteng
+in C:\xampp\htdocs\triomotor\protected\views\provinsi\kalteng.php (11022)
+in C:\xampp\htdocs\triomotor\protected\controllers\ProvinsiController.php (201)
+in C:\xampp\htdocs\triomotor\index.php (13)
+2014/07/18 09:23:51 [error] [php] Invalid argument supplied for foreach() (C:\xampp\htdocs\triomotor\protected\views\provinsi\kalteng.php:11023)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(869): ProvinsiController->renderFile()
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(782): ProvinsiController->renderPartial()
+#2 C:\xampp\htdocs\triomotor\protected\controllers\ProvinsiController.php(201): ProvinsiController->render()
+#3 unknown(0): ProvinsiController->actionIndex()
+#4 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#5 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): ProvinsiController->runAction()
+#8 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#10 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): ProvinsiController->filterAccessControl()
+#11 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#12 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#13 C:\xampp\htdocs\yii\framework\web\CController.php(265): ProvinsiController->runActionWithFilters()
+#14 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): ProvinsiController->run()
+#15 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#16 C:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#17 C:\xampp\htdocs\triomotor\index.php(13): CWebApplication->run()
+REQUEST_URI=/triomotor/?r=provinsi&prov=kalteng
+in C:\xampp\htdocs\triomotor\protected\views\provinsi\kalteng.php (11023)
+in C:\xampp\htdocs\triomotor\protected\controllers\ProvinsiController.php (201)
+in C:\xampp\htdocs\triomotor\index.php (13)
+2014/07/19 01:59:43 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it.
+' in C:\xampp\htdocs\yii\framework\db\CDbConnection.php:381
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\CDbConnection.php(330): CDbConnection->open()
+#1 C:\xampp\htdocs\yii\framework\db\CDbConnection.php(308): CDbConnection->setActive(true)
+#2 C:\xampp\htdocs\yii\framework\base\CModule.php(387): CDbConnection->init()
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(438): CModule->getComponent('db')
+#4 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(623): CApplication->getDb()
+#5 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(2309): CActiveRecord->getDbConnection()
+#6 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(387): CActiveRecordMetaData->__construct(Object(Kabupaten))
+#7 C:\xampp\htdocs\triomotor\protected\models\Kabupaten.php(31): CActiveRecord::model('Kabupaten')
+#8 C:\xampp\htdocs\triomotor\protected\controllers\ProvinsiController.php(170): Kabupaten::model()
+#9 [internal function]: ProvinsiController->actionIndex('kalteng')
+#10 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(ProvinsiController), Array)
+#11 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ProvinsiController), Object(ReflectionMethod), Array)
+#12 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#13 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#14 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#15 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#16 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#17 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#18 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#19 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('')
+#21 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('provinsi')
+#22 C:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#23 C:\xampp\htdocs\triomotor\index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/triomotor/?r=provinsi&prov=kalteng
+---
+2014/07/19 01:59:58 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it.
+' in C:\xampp\htdocs\yii\framework\db\CDbConnection.php:381
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\CDbConnection.php(330): CDbConnection->open()
+#1 C:\xampp\htdocs\yii\framework\db\CDbConnection.php(308): CDbConnection->setActive(true)
+#2 C:\xampp\htdocs\yii\framework\base\CModule.php(387): CDbConnection->init()
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(438): CModule->getComponent('db')
+#4 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(623): CApplication->getDb()
+#5 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(2309): CActiveRecord->getDbConnection()
+#6 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(387): CActiveRecordMetaData->__construct(Object(Kabupaten))
+#7 C:\xampp\htdocs\triomotor\protected\models\Kabupaten.php(31): CActiveRecord::model('Kabupaten')
+#8 C:\xampp\htdocs\triomotor\protected\controllers\ProvinsiController.php(170): Kabupaten::model()
+#9 [internal function]: ProvinsiController->actionIndex('kalteng')
+#10 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(ProvinsiController), Array)
+#11 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ProvinsiController), Object(ReflectionMethod), Array)
+#12 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#13 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#14 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#15 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#16 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#17 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#18 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#19 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('')
+#21 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('provinsi')
+#22 C:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#23 C:\xampp\htdocs\triomotor\index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/triomotor/?r=provinsi&prov=kalteng
+---
+2014/07/19 02:00:03 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it.
+' in C:\xampp\htdocs\yii\framework\db\CDbConnection.php:381
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\CDbConnection.php(330): CDbConnection->open()
+#1 C:\xampp\htdocs\yii\framework\db\CDbConnection.php(308): CDbConnection->setActive(true)
+#2 C:\xampp\htdocs\yii\framework\base\CModule.php(387): CDbConnection->init()
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(438): CModule->getComponent('db')
+#4 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(623): CApplication->getDb()
+#5 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(2309): CActiveRecord->getDbConnection()
+#6 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(387): CActiveRecordMetaData->__construct(Object(Kabupaten))
+#7 C:\xampp\htdocs\triomotor\protected\models\Kabupaten.php(31): CActiveRecord::model('Kabupaten')
+#8 C:\xampp\htdocs\triomotor\protected\controllers\ProvinsiController.php(170): Kabupaten::model()
+#9 [internal function]: ProvinsiController->actionIndex('kalteng')
+#10 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(ProvinsiController), Array)
+#11 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ProvinsiController), Object(ReflectionMethod), Array)
+#12 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#13 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#14 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#15 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#16 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#17 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#18 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#19 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('')
+#21 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('provinsi')
+#22 C:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#23 C:\xampp\htdocs\triomotor\index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/triomotor/?r=provinsi&prov=kalteng
+---
+2014/07/22 02:40:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "tabelpoly".' in C:\xampp\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('tabelpoly')
+#1 C:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\triomotor\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/triomotor/?r=tabelpoly
+---
+2014/07/23 04:24:14 [error] [php] include(EGMap.php): failed to open stream: No such file or directory (C:\xampp\htdocs\yii\framework\YiiBase.php:421)
+Stack trace:
+#0 C:\xampp\htdocs\triomotor\protected\views\site\index.php(6): spl_autoload_call()
+#1 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require()
+#2 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(869): SiteController->renderFile()
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(782): SiteController->renderPartial()
+#5 C:\xampp\htdocs\triomotor\protected\controllers\SiteController.php(110): SiteController->render()
+#6 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#8 C:\xampp\htdocs\yii\framework\web\CController.php(286): SiteController->runAction()
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#10 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#11 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#12 C:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#13 C:\xampp\htdocs\triomotor\index.php(13): CWebApplication->run()
+REQUEST_URI=/triomotor/
+in C:\xampp\htdocs\triomotor\protected\views\site\index.php (6)
+in C:\xampp\htdocs\triomotor\protected\controllers\SiteController.php (110)
+in C:\xampp\htdocs\triomotor\index.php (13)
+2014/07/23 04:24:35 [error] [exception.CException] exception 'CException' with message 'Property "Provinsi.poly" is not defined.' in C:\xampp\htdocs\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(143): CComponent->__get('poly')
+#1 C:\xampp\htdocs\triomotor\protected\views\site\index.php(21): CActiveRecord->__get('poly')
+#2 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#3 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(782): CController->renderPartial('index', Array, true)
+#6 C:\xampp\htdocs\triomotor\protected\controllers\SiteController.php(110): CController->render('index', Array)
+#7 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#8 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('')
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#13 C:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#14 C:\xampp\htdocs\triomotor\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/triomotor/
+---
+2014/07/23 04:25:41 [error] [php] Undefined offset: 1 (C:\xampp\htdocs\triomotor\protected\views\site\index.php:29)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(869): SiteController->renderFile()
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(782): SiteController->renderPartial()
+#2 C:\xampp\htdocs\triomotor\protected\controllers\SiteController.php(110): SiteController->render()
+#3 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(286): SiteController->runAction()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#7 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#8 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\triomotor\index.php(13): CWebApplication->run()
+REQUEST_URI=/triomotor/
+in C:\xampp\htdocs\triomotor\protected\views\site\index.php (29)
+in C:\xampp\htdocs\triomotor\protected\controllers\SiteController.php (110)
+in C:\xampp\htdocs\triomotor\index.php (13)
+2014/07/23 04:27:34 [error] [php] Undefined offset: 1 (C:\xampp\htdocs\triomotor\protected\views\site\index.php:29)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(869): SiteController->renderFile()
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(782): SiteController->renderPartial()
+#2 C:\xampp\htdocs\triomotor\protected\controllers\SiteController.php(110): SiteController->render()
+#3 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(286): SiteController->runAction()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#7 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#8 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\triomotor\index.php(13): CWebApplication->run()
+REQUEST_URI=/triomotor/
+in C:\xampp\htdocs\triomotor\protected\views\site\index.php (29)
+in C:\xampp\htdocs\triomotor\protected\controllers\SiteController.php (110)
+in C:\xampp\htdocs\triomotor\index.php (13)
+2014/07/23 04:30:21 [error] [php] Undefined offset: 1 (C:\xampp\htdocs\triomotor\protected\views\site\index.php:29)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(869): SiteController->renderFile()
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(782): SiteController->renderPartial()
+#2 C:\xampp\htdocs\triomotor\protected\controllers\SiteController.php(110): SiteController->render()
+#3 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(286): SiteController->runAction()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#7 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#8 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\triomotor\index.php(13): CWebApplication->run()
+REQUEST_URI=/triomotor/
+in C:\xampp\htdocs\triomotor\protected\views\site\index.php (29)
+in C:\xampp\htdocs\triomotor\protected\controllers\SiteController.php (110)
+in C:\xampp\htdocs\triomotor\index.php (13)
+2014/07/23 04:31:51 [error] [php] Undefined offset: 1 (C:\xampp\htdocs\triomotor\protected\views\site\index.php:29)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(869): SiteController->renderFile()
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(782): SiteController->renderPartial()
+#2 C:\xampp\htdocs\triomotor\protected\controllers\SiteController.php(110): SiteController->render()
+#3 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(286): SiteController->runAction()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#7 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#8 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\triomotor\index.php(13): CWebApplication->run()
+REQUEST_URI=/triomotor/
+in C:\xampp\htdocs\triomotor\protected\views\site\index.php (29)
+in C:\xampp\htdocs\triomotor\protected\controllers\SiteController.php (110)
+in C:\xampp\htdocs\triomotor\index.php (13)
+2014/07/23 04:33:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "admin".' in C:\xampp\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(270): CController->missingAction('admin')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('admin')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/admin')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\triomotor\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/triomotor/index.php?r=site/admin
+---
+2014/07/23 04:34:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "kabupaten/index".' in C:\xampp\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('kabupaten/index')
+#1 C:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\triomotor\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/triomotor/index.php?r=kabupaten/index&id=6300
+HTTP_REFERER=http://localhost/triomotor/
+---
+2014/07/23 04:39:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "kabupaten/index".' in C:\xampp\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('kabupaten/index')
+#1 C:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\triomotor\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/triomotor/index.php?r=kabupaten/index&id=6300
+HTTP_REFERER=http://localhost/triomotor/
+---
+2014/07/23 04:46:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "kabupaten/index".' in C:\xampp\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('kabupaten/index')
+#1 C:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\triomotor\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/triomotor/index.php?r=kabupaten/index&id=6300
+HTTP_REFERER=http://localhost/triomotor/
+---
+2014/07/23 04:46:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "kabupaten/profil".' in C:\xampp\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('kabupaten/profi...')
+#1 C:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\triomotor\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/triomotor/index.php?r=kabupaten/profil&id=6300
+HTTP_REFERER=http://localhost/triomotor/
+---
+2014/07/23 04:49:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "kabupaten/profil".' in C:\xampp\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('kabupaten/profi...')
+#1 C:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\triomotor\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/triomotor/index.php?r=kabupaten/profil&id=6300
+HTTP_REFERER=http://localhost/triomotor/
+---
+2014/07/23 04:49:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "kabupaten/profil".' in C:\xampp\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('kabupaten/profi...')
+#1 C:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\triomotor\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/triomotor/index.php?r=kabupaten/profil&id=6300
+HTTP_REFERER=http://localhost/triomotor/
+---
+2014/07/23 04:50:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "kabupaten/profilKabupatenKota".' in C:\xampp\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('kabupaten/profi...')
+#1 C:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\triomotor\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/triomotor/index.php?r=kabupaten/profilKabupatenKota&id=6300
+HTTP_REFERER=http://localhost/triomotor/
+---
+2014/07/23 04:53:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "kabupaten/profilKabupatenKota".' in C:\xampp\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('kabupaten/profi...')
+#1 C:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\triomotor\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/triomotor/index.php?r=kabupaten/profilKabupatenKota&id=6300
+HTTP_REFERER=http://localhost/triomotor/
+---
+2014/07/23 04:55:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "kabupaten/profilkabupatenkota".' in C:\xampp\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('kabupaten/profi...')
+#1 C:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\triomotor\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/triomotor/index.php?r=kabupaten/profilkabupatenkota&id=6300
+HTTP_REFERER=http://localhost/triomotor/
+---
+2014/07/23 04:56:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "kabupaten/profilkabupatenkota".' in C:\xampp\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('kabupaten/profi...')
+#1 C:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\triomotor\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/triomotor/index.php?r=kabupaten/profilkabupatenkota&id=6300
+HTTP_REFERER=http://localhost/triomotor/
+---
+2014/07/23 04:57:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "kabupaten/profilkabupatenkota".' in C:\xampp\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('kabupaten/profi...')
+#1 C:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\triomotor\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/triomotor/index.php?r=kabupaten/profilkabupatenkota&id=6300
+HTTP_REFERER=http://localhost/triomotor/
+---
+2014/07/23 04:58:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "kabupaten/profilkabupatenkota".' in C:\xampp\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('kabupaten/profi...')
+#1 C:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\triomotor\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/triomotor/index.php?r=kabupaten/profilkabupatenkota&id=6200
+HTTP_REFERER=http://localhost/triomotor/
+---
+2014/07/23 04:59:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "kabupaten/profil".' in C:\xampp\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('kabupaten/profi...')
+#1 C:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\triomotor\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/triomotor/index.php?r=kabupaten/profil&id=6200
+HTTP_REFERER=http://localhost/triomotor/
+---
+2014/07/23 04:59:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "kabupaten/profil".' in C:\xampp\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('kabupaten/profi...')
+#1 C:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\triomotor\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/triomotor/index.php?r=kabupaten/profil&id=6300
+HTTP_REFERER=http://localhost/triomotor/
+---
+2014/07/23 04:59:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "kabupaten/profil".' in C:\xampp\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('kabupaten/profi...')
+#1 C:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\triomotor\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/triomotor/index.php?r=kabupaten/profil&id=6300
+HTTP_REFERER=http://localhost/triomotor/
+---
+2014/07/23 05:00:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "kabupaten/Profil".' in C:\xampp\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('kabupaten/Profi...')
+#1 C:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\triomotor\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/triomotor/index.php?r=kabupaten/Profil&id=6300
+---
+2014/07/23 05:00:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "kabupaten/index".' in C:\xampp\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('kabupaten/index')
+#1 C:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\triomotor\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/triomotor/index.php?r=kabupaten/index
+---
+2014/07/23 05:01:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "kabupaten/profil".' in C:\xampp\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('kabupaten/profi...')
+#1 C:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\triomotor\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/triomotor/index.php?r=kabupaten/profil&id=6300
+HTTP_REFERER=http://localhost/triomotor/
+---
+2014/07/23 05:01:46 [error] [php] Undefined offset: 1 (C:\xampp\htdocs\triomotor\protected\views\kabupatenKota\profilKabupatenKota.php:29)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(869): KabupatenKotaController->renderFile()
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(782): KabupatenKotaController->renderPartial()
+#2 C:\xampp\htdocs\triomotor\protected\controllers\KabupatenKotaController.php(179): KabupatenKotaController->render()
+#3 unknown(0): KabupatenKotaController->actionProfil()
+#4 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#5 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): KabupatenKotaController->runAction()
+#8 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#10 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): KabupatenKotaController->filterAccessControl()
+#11 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#12 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#13 C:\xampp\htdocs\yii\framework\web\CController.php(265): KabupatenKotaController->runActionWithFilters()
+#14 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): KabupatenKotaController->run()
+#15 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#16 C:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#17 C:\xampp\htdocs\triomotor\index.php(13): CWebApplication->run()
+REQUEST_URI=/triomotor/index.php?r=kabupatenKota/profil&id=6300
+in C:\xampp\htdocs\triomotor\protected\views\kabupatenKota\profilKabupatenKota.php (29)
+in C:\xampp\htdocs\triomotor\protected\controllers\KabupatenKotaController.php (179)
+in C:\xampp\htdocs\triomotor\index.php (13)
+2014/07/23 05:02:26 [error] [php] Undefined offset: 1 (C:\xampp\htdocs\triomotor\protected\views\kabupatenKota\profilKabupatenKota.php:29)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(869): KabupatenKotaController->renderFile()
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(782): KabupatenKotaController->renderPartial()
+#2 C:\xampp\htdocs\triomotor\protected\controllers\KabupatenKotaController.php(179): KabupatenKotaController->render()
+#3 unknown(0): KabupatenKotaController->actionProfil()
+#4 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#5 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): KabupatenKotaController->runAction()
+#8 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#10 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): KabupatenKotaController->filterAccessControl()
+#11 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#12 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#13 C:\xampp\htdocs\yii\framework\web\CController.php(265): KabupatenKotaController->runActionWithFilters()
+#14 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): KabupatenKotaController->run()
+#15 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#16 C:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#17 C:\xampp\htdocs\triomotor\index.php(13): CWebApplication->run()
+REQUEST_URI=/triomotor/index.php?r=kabupatenKota/profil&id=6300
+in C:\xampp\htdocs\triomotor\protected\views\kabupatenKota\profilKabupatenKota.php (29)
+in C:\xampp\htdocs\triomotor\protected\controllers\KabupatenKotaController.php (179)
+in C:\xampp\htdocs\triomotor\index.php (13)
+2014/07/23 05:02:54 [error] [php] Undefined offset: 1 (C:\xampp\htdocs\triomotor\protected\views\kabupatenKota\profilKabupatenKota.php:29)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(869): KabupatenKotaController->renderFile()
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(782): KabupatenKotaController->renderPartial()
+#2 C:\xampp\htdocs\triomotor\protected\controllers\KabupatenKotaController.php(179): KabupatenKotaController->render()
+#3 unknown(0): KabupatenKotaController->actionProfil()
+#4 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#5 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): KabupatenKotaController->runAction()
+#8 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#10 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): KabupatenKotaController->filterAccessControl()
+#11 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#12 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#13 C:\xampp\htdocs\yii\framework\web\CController.php(265): KabupatenKotaController->runActionWithFilters()
+#14 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): KabupatenKotaController->run()
+#15 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#16 C:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#17 C:\xampp\htdocs\triomotor\index.php(13): CWebApplication->run()
+REQUEST_URI=/triomotor/index.php?r=kabupatenKota/profil&id=6200
+in C:\xampp\htdocs\triomotor\protected\views\kabupatenKota\profilKabupatenKota.php (29)
+in C:\xampp\htdocs\triomotor\protected\controllers\KabupatenKotaController.php (179)
+in C:\xampp\htdocs\triomotor\index.php (13)
+2014/07/23 05:04:37 [error] [php] Undefined offset: 1 (C:\xampp\htdocs\triomotor\protected\views\kabupatenKota\profilKabupatenKota.php:29)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(869): KabupatenKotaController->renderFile()
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(782): KabupatenKotaController->renderPartial()
+#2 C:\xampp\htdocs\triomotor\protected\controllers\KabupatenKotaController.php(179): KabupatenKotaController->render()
+#3 unknown(0): KabupatenKotaController->actionProfil()
+#4 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#5 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): KabupatenKotaController->runAction()
+#8 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#10 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): KabupatenKotaController->filterAccessControl()
+#11 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#12 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#13 C:\xampp\htdocs\yii\framework\web\CController.php(265): KabupatenKotaController->runActionWithFilters()
+#14 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): KabupatenKotaController->run()
+#15 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#16 C:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#17 C:\xampp\htdocs\triomotor\index.php(13): CWebApplication->run()
+REQUEST_URI=/triomotor/index.php?r=kabupatenKota/profil&id=6200
+in C:\xampp\htdocs\triomotor\protected\views\kabupatenKota\profilKabupatenKota.php (29)
+in C:\xampp\htdocs\triomotor\protected\controllers\KabupatenKotaController.php (179)
+in C:\xampp\htdocs\triomotor\index.php (13)
+2014/07/23 05:06:25 [error] [php] Undefined offset: 1 (C:\xampp\htdocs\triomotor\protected\views\kabupatenKota\profilKabupatenKota.php:29)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(869): KabupatenKotaController->renderFile()
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(782): KabupatenKotaController->renderPartial()
+#2 C:\xampp\htdocs\triomotor\protected\controllers\KabupatenKotaController.php(179): KabupatenKotaController->render()
+#3 unknown(0): KabupatenKotaController->actionProfil()
+#4 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#5 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): KabupatenKotaController->runAction()
+#8 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#10 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): KabupatenKotaController->filterAccessControl()
+#11 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#12 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#13 C:\xampp\htdocs\yii\framework\web\CController.php(265): KabupatenKotaController->runActionWithFilters()
+#14 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): KabupatenKotaController->run()
+#15 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#16 C:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#17 C:\xampp\htdocs\triomotor\index.php(13): CWebApplication->run()
+REQUEST_URI=/triomotor/index.php?r=kabupatenKota/profil&id=6200
+in C:\xampp\htdocs\triomotor\protected\views\kabupatenKota\profilKabupatenKota.php (29)
+in C:\xampp\htdocs\triomotor\protected\controllers\KabupatenKotaController.php (179)
+in C:\xampp\htdocs\triomotor\index.php (13)
+2014/07/23 05:06:31 [error] [php] Undefined offset: 1 (C:\xampp\htdocs\triomotor\protected\views\kabupatenKota\profilKabupatenKota.php:29)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(869): KabupatenKotaController->renderFile()
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(782): KabupatenKotaController->renderPartial()
+#2 C:\xampp\htdocs\triomotor\protected\controllers\KabupatenKotaController.php(179): KabupatenKotaController->render()
+#3 unknown(0): KabupatenKotaController->actionProfil()
+#4 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#5 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): KabupatenKotaController->runAction()
+#8 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#10 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): KabupatenKotaController->filterAccessControl()
+#11 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#12 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#13 C:\xampp\htdocs\yii\framework\web\CController.php(265): KabupatenKotaController->runActionWithFilters()
+#14 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): KabupatenKotaController->run()
+#15 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#16 C:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#17 C:\xampp\htdocs\triomotor\index.php(13): CWebApplication->run()
+REQUEST_URI=/triomotor/index.php?r=kabupatenKota/profil&id=6300
+in C:\xampp\htdocs\triomotor\protected\views\kabupatenKota\profilKabupatenKota.php (29)
+in C:\xampp\htdocs\triomotor\protected\controllers\KabupatenKotaController.php (179)
+in C:\xampp\htdocs\triomotor\index.php (13)
+2014/07/23 05:08:54 [error] [php] Undefined offset: 1 (C:\xampp\htdocs\triomotor\protected\views\kabupatenKota\profilKabupatenKota.php:29)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(869): KabupatenKotaController->renderFile()
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(782): KabupatenKotaController->renderPartial()
+#2 C:\xampp\htdocs\triomotor\protected\controllers\KabupatenKotaController.php(179): KabupatenKotaController->render()
+#3 unknown(0): KabupatenKotaController->actionProfil()
+#4 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#5 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): KabupatenKotaController->runAction()
+#8 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#10 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): KabupatenKotaController->filterAccessControl()
+#11 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#12 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#13 C:\xampp\htdocs\yii\framework\web\CController.php(265): KabupatenKotaController->runActionWithFilters()
+#14 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): KabupatenKotaController->run()
+#15 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#16 C:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#17 C:\xampp\htdocs\triomotor\index.php(13): CWebApplication->run()
+REQUEST_URI=/triomotor/index.php?r=kabupatenKota/profil&id=6200
+in C:\xampp\htdocs\triomotor\protected\views\kabupatenKota\profilKabupatenKota.php (29)
+in C:\xampp\htdocs\triomotor\protected\controllers\KabupatenKotaController.php (179)
+in C:\xampp\htdocs\triomotor\index.php (13)
+2014/07/23 05:10:47 [error] [exception.CException] exception 'CException' with message 'EGMapPolygon argument #1 has to be an array of minimum three EGMapCoord objects.' in C:\xampp\htdocs\triomotor\protected\extensions\EGMap\EGMapPolygon.php:152
+Stack trace:
+#0 C:\xampp\htdocs\triomotor\protected\extensions\EGMap\EGMapPolygon.php(74): EGMapPolygon->setCoords(Array)
+#1 C:\xampp\htdocs\triomotor\protected\views\kabupatenKota\profilKabupatenKota.php(60): EGMapPolygon->__construct(Array)
+#2 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#3 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(782): CController->renderPartial('profilKabupaten...', Array, true)
+#6 C:\xampp\htdocs\triomotor\protected\controllers\KabupatenKotaController.php(179): CController->render('profilKabupaten...', Array)
+#7 [internal function]: KabupatenKotaController->actionProfil('6200')
+#8 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(KabupatenKotaController), Array)
+#9 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(KabupatenKotaController), Object(ReflectionMethod), Array)
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#12 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#13 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#14 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#15 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#16 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#17 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('profil')
+#19 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('kabupatenKota/p...')
+#20 C:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#21 C:\xampp\htdocs\triomotor\index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/triomotor/index.php?r=kabupatenKota/profil&id=6200
+HTTP_REFERER=http://localhost/triomotor/
+---
+2014/07/23 05:11:23 [error] [exception.CException] exception 'CException' with message 'EGMapPolygon argument #1 has to be an array of minimum three EGMapCoord objects.' in C:\xampp\htdocs\triomotor\protected\extensions\EGMap\EGMapPolygon.php:152
+Stack trace:
+#0 C:\xampp\htdocs\triomotor\protected\extensions\EGMap\EGMapPolygon.php(74): EGMapPolygon->setCoords(Array)
+#1 C:\xampp\htdocs\triomotor\protected\views\kabupatenKota\profilKabupatenKota.php(60): EGMapPolygon->__construct(Array)
+#2 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#3 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(782): CController->renderPartial('profilKabupaten...', Array, true)
+#6 C:\xampp\htdocs\triomotor\protected\controllers\KabupatenKotaController.php(179): CController->render('profilKabupaten...', Array)
+#7 [internal function]: KabupatenKotaController->actionProfil('6200')
+#8 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(KabupatenKotaController), Array)
+#9 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(KabupatenKotaController), Object(ReflectionMethod), Array)
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#12 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#13 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#14 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#15 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#16 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#17 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('profil')
+#19 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('kabupatenKota/p...')
+#20 C:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#21 C:\xampp\htdocs\triomotor\index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/triomotor/index.php?r=kabupatenKota/profil&id=6200
+HTTP_REFERER=http://localhost/triomotor/
+---
+2014/07/23 05:26:38 [error] [php] Undefined offset: 1 (C:\xampp\htdocs\triomotor\protected\views\kabupatenKota\profilKabupatenKota.php:29)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(869): KabupatenKotaController->renderFile()
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(782): KabupatenKotaController->renderPartial()
+#2 C:\xampp\htdocs\triomotor\protected\controllers\KabupatenKotaController.php(179): KabupatenKotaController->render()
+#3 unknown(0): KabupatenKotaController->actionProfil()
+#4 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#5 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): KabupatenKotaController->runAction()
+#8 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#10 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): KabupatenKotaController->filterAccessControl()
+#11 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#12 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#13 C:\xampp\htdocs\yii\framework\web\CController.php(265): KabupatenKotaController->runActionWithFilters()
+#14 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): KabupatenKotaController->run()
+#15 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#16 C:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#17 C:\xampp\htdocs\triomotor\index.php(13): CWebApplication->run()
+REQUEST_URI=/triomotor/index.php?r=kabupatenKota/profil&id=6200
+in C:\xampp\htdocs\triomotor\protected\views\kabupatenKota\profilKabupatenKota.php (29)
+in C:\xampp\htdocs\triomotor\protected\controllers\KabupatenKotaController.php (179)
+in C:\xampp\htdocs\triomotor\index.php (13)
+2014/07/23 05:27:12 [error] [php] Undefined offset: 1 (C:\xampp\htdocs\triomotor\protected\views\kabupatenKota\profilKabupatenKota.php:30)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(869): KabupatenKotaController->renderFile()
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(782): KabupatenKotaController->renderPartial()
+#2 C:\xampp\htdocs\triomotor\protected\controllers\KabupatenKotaController.php(179): KabupatenKotaController->render()
+#3 unknown(0): KabupatenKotaController->actionProfil()
+#4 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#5 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): KabupatenKotaController->runAction()
+#8 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#10 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): KabupatenKotaController->filterAccessControl()
+#11 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#12 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#13 C:\xampp\htdocs\yii\framework\web\CController.php(265): KabupatenKotaController->runActionWithFilters()
+#14 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): KabupatenKotaController->run()
+#15 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#16 C:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#17 C:\xampp\htdocs\triomotor\index.php(13): CWebApplication->run()
+REQUEST_URI=/triomotor/index.php?r=kabupatenKota/profil&id=6200
+in C:\xampp\htdocs\triomotor\protected\views\kabupatenKota\profilKabupatenKota.php (30)
+in C:\xampp\htdocs\triomotor\protected\controllers\KabupatenKotaController.php (179)
+in C:\xampp\htdocs\triomotor\index.php (13)
+2014/07/23 05:28:14 [error] [exception.CException] exception 'CException' with message 'EGMapPolygon argument #1 has to be an array of minimum three EGMapCoord objects.' in C:\xampp\htdocs\triomotor\protected\extensions\EGMap\EGMapPolygon.php:152
+Stack trace:
+#0 C:\xampp\htdocs\triomotor\protected\extensions\EGMap\EGMapPolygon.php(74): EGMapPolygon->setCoords(Array)
+#1 C:\xampp\htdocs\triomotor\protected\views\kabupatenKota\profilKabupatenKota.php(63): EGMapPolygon->__construct(Array)
+#2 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#3 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(782): CController->renderPartial('profilKabupaten...', Array, true)
+#6 C:\xampp\htdocs\triomotor\protected\controllers\KabupatenKotaController.php(179): CController->render('profilKabupaten...', Array)
+#7 [internal function]: KabupatenKotaController->actionProfil('6200')
+#8 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(KabupatenKotaController), Array)
+#9 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(KabupatenKotaController), Object(ReflectionMethod), Array)
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#12 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#13 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#14 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#15 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#16 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#17 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('profil')
+#19 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('kabupatenKota/p...')
+#20 C:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#21 C:\xampp\htdocs\triomotor\index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/triomotor/index.php?r=kabupatenKota/profil&id=6200
+HTTP_REFERER=http://localhost/triomotor/
+---
+2014/07/23 05:29:35 [error] [exception.CException] exception 'CException' with message 'EGMapPolygon argument #1 has to be an array of minimum three EGMapCoord objects.' in C:\xampp\htdocs\triomotor\protected\extensions\EGMap\EGMapPolygon.php:152
+Stack trace:
+#0 C:\xampp\htdocs\triomotor\protected\extensions\EGMap\EGMapPolygon.php(74): EGMapPolygon->setCoords(Array)
+#1 C:\xampp\htdocs\triomotor\protected\views\kabupatenKota\profilKabupatenKota.php(65): EGMapPolygon->__construct(Array)
+#2 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#3 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(782): CController->renderPartial('profilKabupaten...', Array, true)
+#6 C:\xampp\htdocs\triomotor\protected\controllers\KabupatenKotaController.php(179): CController->render('profilKabupaten...', Array)
+#7 [internal function]: KabupatenKotaController->actionProfil('6200')
+#8 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(KabupatenKotaController), Array)
+#9 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(KabupatenKotaController), Object(ReflectionMethod), Array)
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#12 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#13 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#14 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#15 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#16 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#17 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('profil')
+#19 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('kabupatenKota/p...')
+#20 C:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#21 C:\xampp\htdocs\triomotor\index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/triomotor/index.php?r=kabupatenKota/profil&id=6200
+HTTP_REFERER=http://localhost/triomotor/
+---
+2014/07/23 05:30:49 [error] [php] Undefined offset: 1 (C:\xampp\htdocs\triomotor\protected\views\kabupatenKota\profilKabupatenKota.php:29)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(869): KabupatenKotaController->renderFile()
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(782): KabupatenKotaController->renderPartial()
+#2 C:\xampp\htdocs\triomotor\protected\controllers\KabupatenKotaController.php(179): KabupatenKotaController->render()
+#3 unknown(0): KabupatenKotaController->actionProfil()
+#4 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#5 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): KabupatenKotaController->runAction()
+#8 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#10 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): KabupatenKotaController->filterAccessControl()
+#11 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#12 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#13 C:\xampp\htdocs\yii\framework\web\CController.php(265): KabupatenKotaController->runActionWithFilters()
+#14 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): KabupatenKotaController->run()
+#15 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#16 C:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#17 C:\xampp\htdocs\triomotor\index.php(13): CWebApplication->run()
+REQUEST_URI=/triomotor/index.php?r=kabupatenKota/profil&id=6200
+in C:\xampp\htdocs\triomotor\protected\views\kabupatenKota\profilKabupatenKota.php (29)
+in C:\xampp\htdocs\triomotor\protected\controllers\KabupatenKotaController.php (179)
+in C:\xampp\htdocs\triomotor\index.php (13)
+2014/07/23 05:42:37 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\htdocs\yii\framework\web\auth\CAccessControlFilter.php:179
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\auth\CAccessControlFilter.php(142): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('profil')
+#8 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('kecamatan/profi...')
+#9 C:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\triomotor\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/triomotor/index.php?r=kecamatan/profil&id=6201
+HTTP_REFERER=http://localhost/triomotor/index.php?r=kabupatenKota/profil&id=6200
+---
+2014/07/23 05:58:13 [error] [php] Undefined offset: 1 (C:\xampp\htdocs\triomotor\protected\views\kabupatenKota\profilKabupatenKota.php:21)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(869): KabupatenKotaController->renderFile()
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(782): KabupatenKotaController->renderPartial()
+#2 C:\xampp\htdocs\triomotor\protected\controllers\KabupatenKotaController.php(179): KabupatenKotaController->render()
+#3 unknown(0): KabupatenKotaController->actionProfil()
+#4 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#5 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): KabupatenKotaController->runAction()
+#8 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#10 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): KabupatenKotaController->filterAccessControl()
+#11 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#12 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#13 C:\xampp\htdocs\yii\framework\web\CController.php(265): KabupatenKotaController->runActionWithFilters()
+#14 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): KabupatenKotaController->run()
+#15 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#16 C:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#17 C:\xampp\htdocs\triomotor\index.php(13): CWebApplication->run()
+REQUEST_URI=/triomotor/index.php?r=kabupatenKota/profil&id=6200
+in C:\xampp\htdocs\triomotor\protected\views\kabupatenKota\profilKabupatenKota.php (21)
+in C:\xampp\htdocs\triomotor\protected\controllers\KabupatenKotaController.php (179)
+in C:\xampp\htdocs\triomotor\index.php (13)
+2014/07/23 06:09:02 [error] [php] Undefined variable: centers (C:\xampp\htdocs\triomotor\protected\views\kabupatenKota\profilKabupatenKota.php:20)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(869): KabupatenKotaController->renderFile()
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(782): KabupatenKotaController->renderPartial()
+#2 C:\xampp\htdocs\triomotor\protected\controllers\KabupatenKotaController.php(181): KabupatenKotaController->render()
+#3 unknown(0): KabupatenKotaController->actionProfil()
+#4 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#5 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): KabupatenKotaController->runAction()
+#8 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#10 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): KabupatenKotaController->filterAccessControl()
+#11 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#12 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#13 C:\xampp\htdocs\yii\framework\web\CController.php(265): KabupatenKotaController->runActionWithFilters()
+#14 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): KabupatenKotaController->run()
+#15 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#16 C:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#17 C:\xampp\htdocs\triomotor\index.php(13): CWebApplication->run()
+REQUEST_URI=/triomotor/index.php?r=kabupatenKota/profil&id=6300
+in C:\xampp\htdocs\triomotor\protected\views\kabupatenKota\profilKabupatenKota.php (20)
+in C:\xampp\htdocs\triomotor\protected\controllers\KabupatenKotaController.php (181)
+in C:\xampp\htdocs\triomotor\index.php (13)
+2014/07/23 06:09:53 [error] [php] Undefined offset: 1 (C:\xampp\htdocs\triomotor\protected\views\kabupatenKota\profilKabupatenKota.php:21)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(869): KabupatenKotaController->renderFile()
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(782): KabupatenKotaController->renderPartial()
+#2 C:\xampp\htdocs\triomotor\protected\controllers\KabupatenKotaController.php(181): KabupatenKotaController->render()
+#3 unknown(0): KabupatenKotaController->actionProfil()
+#4 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#5 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): KabupatenKotaController->runAction()
+#8 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#10 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): KabupatenKotaController->filterAccessControl()
+#11 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#12 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#13 C:\xampp\htdocs\yii\framework\web\CController.php(265): KabupatenKotaController->runActionWithFilters()
+#14 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): KabupatenKotaController->run()
+#15 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#16 C:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#17 C:\xampp\htdocs\triomotor\index.php(13): CWebApplication->run()
+REQUEST_URI=/triomotor/index.php?r=kabupatenKota/profil&id=6200
+in C:\xampp\htdocs\triomotor\protected\views\kabupatenKota\profilKabupatenKota.php (21)
+in C:\xampp\htdocs\triomotor\protected\controllers\KabupatenKotaController.php (181)
+in C:\xampp\htdocs\triomotor\index.php (13)
+2014/07/23 06:11:07 [error] [php] Undefined offset: 1 (C:\xampp\htdocs\triomotor\protected\views\kabupatenKota\profilKabupatenKota.php:24)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(869): KabupatenKotaController->renderFile()
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(782): KabupatenKotaController->renderPartial()
+#2 C:\xampp\htdocs\triomotor\protected\controllers\KabupatenKotaController.php(181): KabupatenKotaController->render()
+#3 unknown(0): KabupatenKotaController->actionProfil()
+#4 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#5 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): KabupatenKotaController->runAction()
+#8 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#10 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): KabupatenKotaController->filterAccessControl()
+#11 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#12 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#13 C:\xampp\htdocs\yii\framework\web\CController.php(265): KabupatenKotaController->runActionWithFilters()
+#14 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): KabupatenKotaController->run()
+#15 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#16 C:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#17 C:\xampp\htdocs\triomotor\index.php(13): CWebApplication->run()
+REQUEST_URI=/triomotor/index.php?r=kabupatenKota/profil&id=6200
+in C:\xampp\htdocs\triomotor\protected\views\kabupatenKota\profilKabupatenKota.php (24)
+in C:\xampp\htdocs\triomotor\protected\controllers\KabupatenKotaController.php (181)
+in C:\xampp\htdocs\triomotor\index.php (13)
+2014/07/23 07:59:45 [error] [php] Undefined offset: 1 (C:\xampp\htdocs\triomotor\protected\views\kabupatenKota\profilKabupatenKota.php:40)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(869): KabupatenKotaController->renderFile()
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(782): KabupatenKotaController->renderPartial()
+#2 C:\xampp\htdocs\triomotor\protected\controllers\KabupatenKotaController.php(181): KabupatenKotaController->render()
+#3 unknown(0): KabupatenKotaController->actionProfil()
+#4 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#5 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): KabupatenKotaController->runAction()
+#8 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#10 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): KabupatenKotaController->filterAccessControl()
+#11 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#12 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#13 C:\xampp\htdocs\yii\framework\web\CController.php(265): KabupatenKotaController->runActionWithFilters()
+#14 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): KabupatenKotaController->run()
+#15 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#16 C:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#17 C:\xampp\htdocs\triomotor\index.php(13): CWebApplication->run()
+REQUEST_URI=/triomotor/index.php?r=kabupatenKota/profil&id=6300
+in C:\xampp\htdocs\triomotor\protected\views\kabupatenKota\profilKabupatenKota.php (40)
+in C:\xampp\htdocs\triomotor\protected\controllers\KabupatenKotaController.php (181)
+in C:\xampp\htdocs\triomotor\index.php (13)
+2014/07/23 08:28:24 [error] [exception.CException] exception 'CException' with message 'Property "KabupatenKota.polygon_prov" is not defined.' in C:\xampp\htdocs\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(143): CComponent->__get('polygon_prov')
+#1 C:\xampp\htdocs\triomotor\protected\views\kabupatenKota\profilKabupatenKota.php(29): CActiveRecord->__get('polygon_prov')
+#2 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#3 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(782): CController->renderPartial('profilKabupaten...', Array, true)
+#6 C:\xampp\htdocs\triomotor\protected\controllers\KabupatenKotaController.php(181): CController->render('profilKabupaten...', Array)
+#7 [internal function]: KabupatenKotaController->actionProfil('6300')
+#8 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(KabupatenKotaController), Array)
+#9 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(KabupatenKotaController), Object(ReflectionMethod), Array)
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#12 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#13 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#14 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#15 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#16 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#17 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('profil')
+#19 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('kabupatenKota/p...')
+#20 C:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#21 C:\xampp\htdocs\triomotor\index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/triomotor/index.php?r=kabupatenKota/profil&id=6300
+HTTP_REFERER=http://localhost/triomotor/index.php?
+---
+2014/07/23 08:31:22 [error] [php] Trying to get property of non-object (C:\xampp\htdocs\triomotor\protected\views\kabupatenKota\profilKabupatenKota.php:29)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(869): KabupatenKotaController->renderFile()
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(782): KabupatenKotaController->renderPartial()
+#2 C:\xampp\htdocs\triomotor\protected\controllers\KabupatenKotaController.php(181): KabupatenKotaController->render()
+#3 unknown(0): KabupatenKotaController->actionProfil()
+#4 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#5 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): KabupatenKotaController->runAction()
+#8 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#10 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): KabupatenKotaController->filterAccessControl()
+#11 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#12 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#13 C:\xampp\htdocs\yii\framework\web\CController.php(265): KabupatenKotaController->runActionWithFilters()
+#14 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): KabupatenKotaController->run()
+#15 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#16 C:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#17 C:\xampp\htdocs\triomotor\index.php(13): CWebApplication->run()
+REQUEST_URI=/triomotor/index.php?r=kabupatenKota/profil&id=6200
+in C:\xampp\htdocs\triomotor\protected\views\kabupatenKota\profilKabupatenKota.php (29)
+in C:\xampp\htdocs\triomotor\protected\controllers\KabupatenKotaController.php (181)
+in C:\xampp\htdocs\triomotor\index.php (13)
+2014/07/23 08:40:06 [error] [php] Undefined offset: 1 (C:\xampp\htdocs\triomotor\protected\views\kabupatenKota\profilKabupatenKota.php:47)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(869): KabupatenKotaController->renderFile()
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(782): KabupatenKotaController->renderPartial()
+#2 C:\xampp\htdocs\triomotor\protected\controllers\KabupatenKotaController.php(181): KabupatenKotaController->render()
+#3 unknown(0): KabupatenKotaController->actionProfil()
+#4 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#5 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): KabupatenKotaController->runAction()
+#8 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#10 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): KabupatenKotaController->filterAccessControl()
+#11 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#12 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#13 C:\xampp\htdocs\yii\framework\web\CController.php(265): KabupatenKotaController->runActionWithFilters()
+#14 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): KabupatenKotaController->run()
+#15 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#16 C:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#17 C:\xampp\htdocs\triomotor\index.php(13): CWebApplication->run()
+REQUEST_URI=/triomotor/index.php?r=kabupatenKota/profil&id=6300
+in C:\xampp\htdocs\triomotor\protected\views\kabupatenKota\profilKabupatenKota.php (47)
+in C:\xampp\htdocs\triomotor\protected\controllers\KabupatenKotaController.php (181)
+in C:\xampp\htdocs\triomotor\index.php (13)
+2014/07/23 09:06:34 [error] [php] Undefined variable: dataProvider (C:\xampp\htdocs\triomotor\protected\views\kabupatenKota\profilKabupatenKota.php:79)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(869): KabupatenKotaController->renderFile()
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(782): KabupatenKotaController->renderPartial()
+#2 C:\xampp\htdocs\triomotor\protected\controllers\KabupatenKotaController.php(181): KabupatenKotaController->render()
+#3 unknown(0): KabupatenKotaController->actionProfil()
+#4 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#5 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): KabupatenKotaController->runAction()
+#8 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#10 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): KabupatenKotaController->filterAccessControl()
+#11 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#12 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#13 C:\xampp\htdocs\yii\framework\web\CController.php(265): KabupatenKotaController->runActionWithFilters()
+#14 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): KabupatenKotaController->run()
+#15 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#16 C:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#17 C:\xampp\htdocs\triomotor\index.php(13): CWebApplication->run()
+REQUEST_URI=/triomotor/index.php?r=kabupatenKota/profil&id=6300
+in C:\xampp\htdocs\triomotor\protected\views\kabupatenKota\profilKabupatenKota.php (79)
+in C:\xampp\htdocs\triomotor\protected\controllers\KabupatenKotaController.php (181)
+in C:\xampp\htdocs\triomotor\index.php (13)
+2014/07/24 02:45:02 [error] [php] Undefined offset: 1 (C:\xampp\htdocs\triomotor\protected\views\kecamatan\profilKecamatan.php:19)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(869): KecamatanController->renderFile()
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(782): KecamatanController->renderPartial()
+#2 C:\xampp\htdocs\triomotor\protected\controllers\KecamatanController.php(181): KecamatanController->render()
+#3 unknown(0): KecamatanController->actionProfil()
+#4 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#5 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): KecamatanController->runAction()
+#8 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#10 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): KecamatanController->filterAccessControl()
+#11 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#12 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#13 C:\xampp\htdocs\yii\framework\web\CController.php(265): KecamatanController->runActionWithFilters()
+#14 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): KecamatanController->run()
+#15 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#16 C:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#17 C:\xampp\htdocs\triomotor\index.php(13): CWebApplication->run()
+REQUEST_URI=/triomotor/index.php?r=kecamatan/profil&id=6202
+in C:\xampp\htdocs\triomotor\protected\views\kecamatan\profilKecamatan.php (19)
+in C:\xampp\htdocs\triomotor\protected\controllers\KecamatanController.php (181)
+in C:\xampp\htdocs\triomotor\index.php (13)
+2014/07/24 02:46:46 [error] [php] Undefined offset: 1 (C:\xampp\htdocs\triomotor\protected\views\kecamatan\profilKecamatan.php:19)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(869): KecamatanController->renderFile()
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(782): KecamatanController->renderPartial()
+#2 C:\xampp\htdocs\triomotor\protected\controllers\KecamatanController.php(181): KecamatanController->render()
+#3 unknown(0): KecamatanController->actionProfil()
+#4 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#5 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): KecamatanController->runAction()
+#8 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#10 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): KecamatanController->filterAccessControl()
+#11 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#12 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#13 C:\xampp\htdocs\yii\framework\web\CController.php(265): KecamatanController->runActionWithFilters()
+#14 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): KecamatanController->run()
+#15 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#16 C:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#17 C:\xampp\htdocs\triomotor\index.php(13): CWebApplication->run()
+REQUEST_URI=/triomotor/index.php?r=kecamatan/profil&id=6202
+in C:\xampp\htdocs\triomotor\protected\views\kecamatan\profilKecamatan.php (19)
+in C:\xampp\htdocs\triomotor\protected\controllers\KecamatanController.php (181)
+in C:\xampp\htdocs\triomotor\index.php (13)
+2014/07/24 02:47:23 [error] [php] Undefined offset: 1 (C:\xampp\htdocs\triomotor\protected\views\kecamatan\profilKecamatan.php:19)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(869): KecamatanController->renderFile()
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(782): KecamatanController->renderPartial()
+#2 C:\xampp\htdocs\triomotor\protected\controllers\KecamatanController.php(181): KecamatanController->render()
+#3 unknown(0): KecamatanController->actionProfil()
+#4 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#5 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): KecamatanController->runAction()
+#8 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#10 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): KecamatanController->filterAccessControl()
+#11 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#12 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#13 C:\xampp\htdocs\yii\framework\web\CController.php(265): KecamatanController->runActionWithFilters()
+#14 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): KecamatanController->run()
+#15 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#16 C:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#17 C:\xampp\htdocs\triomotor\index.php(13): CWebApplication->run()
+REQUEST_URI=/triomotor/index.php?r=kecamatan/profil&id=6202
+in C:\xampp\htdocs\triomotor\protected\views\kecamatan\profilKecamatan.php (19)
+in C:\xampp\htdocs\triomotor\protected\controllers\KecamatanController.php (181)
+in C:\xampp\htdocs\triomotor\index.php (13)
+2014/07/24 02:49:56 [error] [php] Undefined offset: 1 (C:\xampp\htdocs\triomotor\protected\views\kecamatan\profilKecamatan.php:19)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(869): KecamatanController->renderFile()
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(782): KecamatanController->renderPartial()
+#2 C:\xampp\htdocs\triomotor\protected\controllers\KecamatanController.php(181): KecamatanController->render()
+#3 unknown(0): KecamatanController->actionProfil()
+#4 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#5 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): KecamatanController->runAction()
+#8 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#10 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): KecamatanController->filterAccessControl()
+#11 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#12 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#13 C:\xampp\htdocs\yii\framework\web\CController.php(265): KecamatanController->runActionWithFilters()
+#14 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): KecamatanController->run()
+#15 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#16 C:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#17 C:\xampp\htdocs\triomotor\index.php(13): CWebApplication->run()
+REQUEST_URI=/triomotor/index.php?r=kecamatan/profil&id=6202
+in C:\xampp\htdocs\triomotor\protected\views\kecamatan\profilKecamatan.php (19)
+in C:\xampp\htdocs\triomotor\protected\controllers\KecamatanController.php (181)
+in C:\xampp\htdocs\triomotor\index.php (13)
+2014/07/24 02:50:55 [error] [php] Undefined offset: 1 (C:\xampp\htdocs\triomotor\protected\views\kecamatan\profilKecamatan.php:19)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(869): KecamatanController->renderFile()
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(782): KecamatanController->renderPartial()
+#2 C:\xampp\htdocs\triomotor\protected\controllers\KecamatanController.php(181): KecamatanController->render()
+#3 unknown(0): KecamatanController->actionProfil()
+#4 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#5 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): KecamatanController->runAction()
+#8 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#10 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): KecamatanController->filterAccessControl()
+#11 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#12 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#13 C:\xampp\htdocs\yii\framework\web\CController.php(265): KecamatanController->runActionWithFilters()
+#14 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): KecamatanController->run()
+#15 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#16 C:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#17 C:\xampp\htdocs\triomotor\index.php(13): CWebApplication->run()
+REQUEST_URI=/triomotor/index.php?r=kecamatan/profil&id=6202
+in C:\xampp\htdocs\triomotor\protected\views\kecamatan\profilKecamatan.php (19)
+in C:\xampp\htdocs\triomotor\protected\controllers\KecamatanController.php (181)
+in C:\xampp\htdocs\triomotor\index.php (13)
+2014/07/24 02:54:39 [error] [php] Undefined offset: 1 (C:\xampp\htdocs\triomotor\protected\views\kecamatan\profilKecamatan.php:19)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(869): KecamatanController->renderFile()
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(782): KecamatanController->renderPartial()
+#2 C:\xampp\htdocs\triomotor\protected\controllers\KecamatanController.php(181): KecamatanController->render()
+#3 unknown(0): KecamatanController->actionProfil()
+#4 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#5 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): KecamatanController->runAction()
+#8 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#10 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): KecamatanController->filterAccessControl()
+#11 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#12 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#13 C:\xampp\htdocs\yii\framework\web\CController.php(265): KecamatanController->runActionWithFilters()
+#14 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): KecamatanController->run()
+#15 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#16 C:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#17 C:\xampp\htdocs\triomotor\index.php(13): CWebApplication->run()
+REQUEST_URI=/triomotor/index.php?r=kecamatan/profil&id=6311
+in C:\xampp\htdocs\triomotor\protected\views\kecamatan\profilKecamatan.php (19)
+in C:\xampp\htdocs\triomotor\protected\controllers\KecamatanController.php (181)
+in C:\xampp\htdocs\triomotor\index.php (13)
+2014/07/24 02:55:05 [error] [php] Undefined offset: 1 (C:\xampp\htdocs\triomotor\protected\views\kecamatan\profilKecamatan.php:41)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(869): KecamatanController->renderFile()
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(782): KecamatanController->renderPartial()
+#2 C:\xampp\htdocs\triomotor\protected\controllers\KecamatanController.php(181): KecamatanController->render()
+#3 unknown(0): KecamatanController->actionProfil()
+#4 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#5 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): KecamatanController->runAction()
+#8 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#10 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): KecamatanController->filterAccessControl()
+#11 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#12 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#13 C:\xampp\htdocs\yii\framework\web\CController.php(265): KecamatanController->runActionWithFilters()
+#14 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): KecamatanController->run()
+#15 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#16 C:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#17 C:\xampp\htdocs\triomotor\index.php(13): CWebApplication->run()
+REQUEST_URI=/triomotor/index.php?r=kecamatan/profil&id=6311
+in C:\xampp\htdocs\triomotor\protected\views\kecamatan\profilKecamatan.php (41)
+in C:\xampp\htdocs\triomotor\protected\controllers\KecamatanController.php (181)
+in C:\xampp\htdocs\triomotor\index.php (13)
+2014/07/24 03:11:04 [error] [php] Undefined offset: 1 (C:\xampp\htdocs\triomotor\protected\views\kecamatan\profilKecamatan.php:19)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(869): KecamatanController->renderFile()
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(782): KecamatanController->renderPartial()
+#2 C:\xampp\htdocs\triomotor\protected\controllers\KecamatanController.php(181): KecamatanController->render()
+#3 unknown(0): KecamatanController->actionProfil()
+#4 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#5 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): KecamatanController->runAction()
+#8 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#10 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): KecamatanController->filterAccessControl()
+#11 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#12 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#13 C:\xampp\htdocs\yii\framework\web\CController.php(265): KecamatanController->runActionWithFilters()
+#14 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): KecamatanController->run()
+#15 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#16 C:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#17 C:\xampp\htdocs\triomotor\index.php(13): CWebApplication->run()
+REQUEST_URI=/triomotor/index.php?r=kecamatan/profil&id=6372
+in C:\xampp\htdocs\triomotor\protected\views\kecamatan\profilKecamatan.php (19)
+in C:\xampp\htdocs\triomotor\protected\controllers\KecamatanController.php (181)
+in C:\xampp\htdocs\triomotor\index.php (13)
+2014/07/24 04:04:56 [error] [php] Undefined offset: 1 (C:\xampp\htdocs\triomotor\protected\views\kecamatan\profilKecamatan.php:41)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(869): KecamatanController->renderFile()
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(782): KecamatanController->renderPartial()
+#2 C:\xampp\htdocs\triomotor\protected\controllers\KecamatanController.php(181): KecamatanController->render()
+#3 unknown(0): KecamatanController->actionProfil()
+#4 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#5 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): KecamatanController->runAction()
+#8 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#10 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): KecamatanController->filterAccessControl()
+#11 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#12 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#13 C:\xampp\htdocs\yii\framework\web\CController.php(265): KecamatanController->runActionWithFilters()
+#14 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): KecamatanController->run()
+#15 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#16 C:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#17 C:\xampp\htdocs\triomotor\index.php(13): CWebApplication->run()
+REQUEST_URI=/triomotor/index.php?r=kecamatan/profil&id=6211
+in C:\xampp\htdocs\triomotor\protected\views\kecamatan\profilKecamatan.php (41)
+in C:\xampp\htdocs\triomotor\protected\controllers\KecamatanController.php (181)
+in C:\xampp\htdocs\triomotor\index.php (13)
+2014/07/24 04:06:31 [error] [php] Undefined offset: 1 (C:\xampp\htdocs\triomotor\protected\views\kecamatan\profilKecamatan.php:41)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(869): KecamatanController->renderFile()
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(782): KecamatanController->renderPartial()
+#2 C:\xampp\htdocs\triomotor\protected\controllers\KecamatanController.php(181): KecamatanController->render()
+#3 unknown(0): KecamatanController->actionProfil()
+#4 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#5 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): KecamatanController->runAction()
+#8 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#10 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): KecamatanController->filterAccessControl()
+#11 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#12 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#13 C:\xampp\htdocs\yii\framework\web\CController.php(265): KecamatanController->runActionWithFilters()
+#14 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): KecamatanController->run()
+#15 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#16 C:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#17 C:\xampp\htdocs\triomotor\index.php(13): CWebApplication->run()
+REQUEST_URI=/triomotor/index.php?r=kecamatan/profil&id=6211
+in C:\xampp\htdocs\triomotor\protected\views\kecamatan\profilKecamatan.php (41)
+in C:\xampp\htdocs\triomotor\protected\controllers\KecamatanController.php (181)
+in C:\xampp\htdocs\triomotor\index.php (13)
+2014/07/24 04:06:59 [error] [php] Undefined offset: 1 (C:\xampp\htdocs\triomotor\protected\views\kecamatan\profilKecamatan.php:41)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(869): KecamatanController->renderFile()
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(782): KecamatanController->renderPartial()
+#2 C:\xampp\htdocs\triomotor\protected\controllers\KecamatanController.php(181): KecamatanController->render()
+#3 unknown(0): KecamatanController->actionProfil()
+#4 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#5 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): KecamatanController->runAction()
+#8 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#10 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): KecamatanController->filterAccessControl()
+#11 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#12 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#13 C:\xampp\htdocs\yii\framework\web\CController.php(265): KecamatanController->runActionWithFilters()
+#14 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): KecamatanController->run()
+#15 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#16 C:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#17 C:\xampp\htdocs\triomotor\index.php(13): CWebApplication->run()
+REQUEST_URI=/triomotor/index.php?r=kecamatan/profil&id=6211
+in C:\xampp\htdocs\triomotor\protected\views\kecamatan\profilKecamatan.php (41)
+in C:\xampp\htdocs\triomotor\protected\controllers\KecamatanController.php (181)
+in C:\xampp\htdocs\triomotor\index.php (13)
+2014/07/24 04:07:01 [error] [php] Undefined offset: 1 (C:\xampp\htdocs\triomotor\protected\views\kecamatan\profilKecamatan.php:41)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(869): KecamatanController->renderFile()
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(782): KecamatanController->renderPartial()
+#2 C:\xampp\htdocs\triomotor\protected\controllers\KecamatanController.php(181): KecamatanController->render()
+#3 unknown(0): KecamatanController->actionProfil()
+#4 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#5 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): KecamatanController->runAction()
+#8 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#10 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): KecamatanController->filterAccessControl()
+#11 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#12 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#13 C:\xampp\htdocs\yii\framework\web\CController.php(265): KecamatanController->runActionWithFilters()
+#14 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): KecamatanController->run()
+#15 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#16 C:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#17 C:\xampp\htdocs\triomotor\index.php(13): CWebApplication->run()
+REQUEST_URI=/triomotor/index.php?r=kecamatan/profil&id=6211
+in C:\xampp\htdocs\triomotor\protected\views\kecamatan\profilKecamatan.php (41)
+in C:\xampp\htdocs\triomotor\protected\controllers\KecamatanController.php (181)
+in C:\xampp\htdocs\triomotor\index.php (13)
+2014/07/24 04:07:04 [error] [php] Undefined offset: 1 (C:\xampp\htdocs\triomotor\protected\views\kecamatan\profilKecamatan.php:41)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(869): KecamatanController->renderFile()
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(782): KecamatanController->renderPartial()
+#2 C:\xampp\htdocs\triomotor\protected\controllers\KecamatanController.php(181): KecamatanController->render()
+#3 unknown(0): KecamatanController->actionProfil()
+#4 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#5 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): KecamatanController->runAction()
+#8 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#10 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): KecamatanController->filterAccessControl()
+#11 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#12 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#13 C:\xampp\htdocs\yii\framework\web\CController.php(265): KecamatanController->runActionWithFilters()
+#14 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): KecamatanController->run()
+#15 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#16 C:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#17 C:\xampp\htdocs\triomotor\index.php(13): CWebApplication->run()
+REQUEST_URI=/triomotor/index.php?r=kecamatan/profil&id=6211
+in C:\xampp\htdocs\triomotor\protected\views\kecamatan\profilKecamatan.php (41)
+in C:\xampp\htdocs\triomotor\protected\controllers\KecamatanController.php (181)
+in C:\xampp\htdocs\triomotor\index.php (13)
+2014/07/24 08:45:07 [error] [php] Undefined offset: 1 (C:\xampp\htdocs\triomotor\protected\views\kecamatan\profilKecamatan.php:40)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(869): KecamatanController->renderFile()
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(782): KecamatanController->renderPartial()
+#2 C:\xampp\htdocs\triomotor\protected\controllers\KecamatanController.php(181): KecamatanController->render()
+#3 unknown(0): KecamatanController->actionProfil()
+#4 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#5 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): KecamatanController->runAction()
+#8 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#10 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): KecamatanController->filterAccessControl()
+#11 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#12 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#13 C:\xampp\htdocs\yii\framework\web\CController.php(265): KecamatanController->runActionWithFilters()
+#14 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): KecamatanController->run()
+#15 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#16 C:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#17 C:\xampp\htdocs\triomotor\index.php(13): CWebApplication->run()
+REQUEST_URI=/triomotor/index.php?r=kecamatan/profil&id=6212
+in C:\xampp\htdocs\triomotor\protected\views\kecamatan\profilKecamatan.php (40)
+in C:\xampp\htdocs\triomotor\protected\controllers\KecamatanController.php (181)
+in C:\xampp\htdocs\triomotor\index.php (13)
